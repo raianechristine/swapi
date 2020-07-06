@@ -56,7 +56,7 @@ const Dashboard = ({
       {!!calculationResult.length && (
         <>
           <ColumnTitles>
-            <ColumnTitle>Startships</ColumnTitle>
+            <ColumnTitle>Starships</ColumnTitle>
             <ColumnTitle>Stops</ColumnTitle>
           </ColumnTitles>
           <Starships>
