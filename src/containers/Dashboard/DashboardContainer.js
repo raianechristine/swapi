@@ -8,7 +8,7 @@ import Dashboard from "components/presentation/Dashboard";
 const DashboardContainer = () => {
   const dispatch = useDispatch();
 
-  const [calculationResult, setCalculationResult] = useState({});
+  const [calculationResult, setCalculationResult] = useState([]);
   const [distance, setDistance] = useState();
 
   const { isLoading, starships, isSuccess } = useSelector(
@@ -16,7 +16,7 @@ const DashboardContainer = () => {
   );
 
   useEffect(() => {
-    resupplyFrequency(distance);
+    isSuccess && resupplyFrequency(distance);
   }, [isSuccess, distance]);
 
   const handleResupplyFrequency = (values) => {

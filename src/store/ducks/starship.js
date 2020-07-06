@@ -12,7 +12,7 @@ export const {
 export const INITIAL_STATE = {
   isLoading: false,
   isSuccess: false,
-  starships: [],
+  starships: {},
 };
 
 const fetchStarships = (state) => ({

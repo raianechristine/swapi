@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { useForm } from "react-hook-form";
 
 import { MASK_TYPES } from "helpers/masks";
@@ -70,6 +71,17 @@ const Dashboard = ({
       )}
     </>
   );
+};
+
+Dashboard.propTypes = {
+  handleResupplyFrequency: PropTypes.func.isRequired,
+  calculationResult: PropTypes.array,
+  isLoading: PropTypes.bool,
+};
+
+Dashboard.defaultProps = {
+  isLoading: false,
+  calculationResult: [],
 };
 
 export default Dashboard;
