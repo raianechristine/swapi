@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import fetchStarships from "store/actions/starship";
 import { useDispatch, useSelector } from "react-redux";
+
+import fetchStarships from "store/actions/starship";
 
 import Dashboard from "components/presentation/Dashboard";
 
