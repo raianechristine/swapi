@@ -8,6 +8,7 @@ to complete a journey while traveling in fictional outer space.
 # How to run
 
 $ yarn (or npm install)
+
 $ yarn start (or npm run start)
 
 # How to run tests
