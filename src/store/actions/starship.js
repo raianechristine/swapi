@@ -1,7 +1,7 @@
 import { BASE_URL, FETCH_STARSHIPS } from "utils/constants/endpoints";
-import { StarshipsActions } from "store/ducks/starship";
+import { StarshipsActions } from "../ducks/starship";
 
-function fetchStarships() {
+const fetchStarships = () => {
   return async (dispatch) => {
     let page = 1;
     let nextUrl = "";
